@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <cstdlib>
 #include <time.h> 
 using namespace std;
@@ -10,7 +10,7 @@ int main() {
     int* arr = new int[size]; 
 
     for (int i = 0; i < size; i++) 
-        arr[i] = rand() % 2; 
+        arr[i] = rand() % 10; 
 
     for (int i = 0; i < size; i++) { 
         int counter = 0;
@@ -26,5 +26,7 @@ int main() {
             break;
         }
     }
-  
+    cout << "Порядок оладий:";
+    for (int i = 0; i < size; i++)
+        cout << arr[i] << " ";
 }
